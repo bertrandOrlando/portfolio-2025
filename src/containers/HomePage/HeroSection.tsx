@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Typewriter } from "./Typewriter";
+import { Typewriter } from "../../components/Typewriter/Typewriter";
 
-export const Header = () => {
+export const HeroSection = () => {
   const descriptions = [
     "Software Engineer",
     "Web Developer",
