@@ -1,8 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  /* --background: #ffffff;
   --foreground: #171717;
+  --blue-text: #8cb5cb;
+  --gradient-0: #99bbce;
+  --gradient-14: #a4b4c9;
+  --gradient-28: #9cdaeb;
+  --gradient-43: #c2e6e4;
+  --gradient-57: #c7dbcd;
+  --gradient-72: #d9d4d4;
+  --gradient-86: #ffffff;
+  --gradient-100: #d3ced9; */
+  /* --custom-gradient: linear-gradient(
+    90deg,
+    #99bbce,
+    #a4b4c9 14%,
+    #9cdaeb 28%,
+    #c2e6e4 43%,
+    #c7dbcd 57%,
+    #d9d4d4 72%,
+    #ffffff 86%,
+    #d3ced9
+  ); */
 }
 
 @theme inline {
@@ -10,6 +30,29 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* --color-blue-text: var(--blue-text);
+  --color-gradient-0: var(--gradient-0);
+  --color-gradient-14: var(--gradient-14);
+  --color-gradient-28: var(--gradient-28);
+  --color-gradient-43: var(--gradient-43);
+  --color-gradient-57: var(--gradient-57);
+  --color-gradient-72: var(--gradient-72);
+  --color-gradient-86: var(--gradient-86);
+  --color-gradient-100: var(--gradient-100); */
+  /* --color-custom-gradient: var(--custom-gradient); */
+
+  /* custom-gradient: `linear-gradient(
+      90deg,
+      #99bbce,
+      #a4b4c9 14%,
+      #9cdaeb 28%,
+      #c2e6e4 43%,
+      #c7dbcd 57%,
+      #d9d4d4 72%,
+      #ffffff 86%,
+      #d3ced9
+    )
+    `; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,3 +67,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* 
+.bg-custom-gradient {
+  background: linear-gradient(
+    90deg,
+    #99bbce,
+    #a4b4c9 14%,
+    #9cdaeb 28%,
+    #c2e6e4 43%,
+    #c7dbcd 57%,
+    #d9d4d4 72%,
+    #ffffff 86%,
+    #d3ced9
+  );
+} */

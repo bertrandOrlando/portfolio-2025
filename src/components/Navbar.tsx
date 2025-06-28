@@ -1,5 +1,11 @@
+"use client";
+
+// TODO: Extract Motion Link Stagger to a separate component
+// TODO: Update transition for each character in Link Stagger
+
 import Link from "next/link";
-import React from "react";
+import { CgArrowTopRight } from "react-icons/cg";
+import { motion } from "motion/react";
 
 export const Navbar = () => {
   const NavItems = [
@@ -11,25 +17,55 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between bg-slate-950 px-12 py-6 text-white">
-      <h2 className="font-semibold text-violet-600">Bertrand Portfolio</h2>
+    <nav className="flex items-center justify-between px-9 py-6">
+      <h2 className="text-3xl font-semibold text-violet-700">BO</h2>
       <ul className="flex items-center gap-4">
         {NavItems.map((item) => (
-          <li
+          <motion.li
+            initial="initial"
+            whileHover="hovered"
             key={item.name}
-            className="transition-colors duration-300 hover:text-violet-500 hover:underline"
+            className="relative block overflow-hidden text-lg font-medium whitespace-nowrap"
           >
-            <Link href={item.href}>{item.name}</Link>
-          </li>
+            <Link href={item.href}>
+              <motion.div
+                variants={{ initial: { y: 0 }, hovered: { y: "-100%" } }}
+              >
+                {item.name}
+              </motion.div>
+              <motion.div
+                className="absolute inset-0 text-violet-700 underline"
+                variants={{ initial: { y: "100%" }, hovered: { y: 0 } }}
+              >
+                {item.name}
+              </motion.div>
+            </Link>
+          </motion.li>
         ))}
-
-        <li>
-          <Link
-            href="mailto:bertrandorlando@gmail.com"
-            className="rounded-3xl border border-violet-600 px-4 py-1"
-          >
-            Hire Me
+      </ul>
+      <ul className="flex items-center gap-4">
+        <motion.li
+          initial="initial"
+          whileHover="hovered"
+          className="relative block overflow-hidden text-lg font-medium whitespace-nowrap"
+        >
+          <Link href="#googledrive" className="flex items-center">
+            <motion.div
+              className="flex items-center"
+              variants={{ initial: { y: 0 }, hovered: { y: "-100%" } }}
+            >
+              My Resume {<CgArrowTopRight />}
+            </motion.div>
+            <motion.div
+              className="absolute inset-0 flex items-center text-violet-700 underline"
+              variants={{ initial: { y: "100%" }, hovered: { y: 0 } }}
+            >
+              My Resume {<CgArrowTopRight />}
+            </motion.div>
           </Link>
+        </motion.li>
+        <li className="rounded-3xl border border-violet-700 px-4 py-1 text-lg font-medium text-black transition-colors duration-300 hover:bg-violet-600 hover:text-white">
+          <Link href="mailto:bertrandorlando@gmail.com">Get in Touch</Link>
         </li>
       </ul>
     </nav>
