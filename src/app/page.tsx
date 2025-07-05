@@ -2,6 +2,7 @@ import { HeroSection } from "@/containers/HomePage/HeroSection";
 import { Navbar } from "@/components/Navbar";
 import { AboutSection } from "@/containers/HomePage/AboutSection";
 import { SkillSection } from "@/containers/HomePage/SkillSection";
+import { ProjectSection } from "@/containers/HomePage/ProjectSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SkillSection />
+      <ProjectSection />
     </div>
   );
 }
