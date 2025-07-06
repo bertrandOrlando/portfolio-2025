@@ -7,7 +7,7 @@ import { ProjectSection } from "@/containers/HomePage/ProjectSection";
 export default function Home() {
   return (
     <div className="bg-slate-50 px-10 md:px-20">
-      {/* <Navbar /> */}
+      <Navbar />
       <HeroSection />
       <AboutSection />
       <SkillSection />
