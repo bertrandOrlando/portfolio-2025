@@ -12,10 +12,11 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const NavItems = [
     // { name: "Home", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Skills", href: "#" },
-    { name: "Projects", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skill" },
+    // { name: "Experience", href: "#work" },
+    { name: "Projects", href: "#project" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (

@@ -3,7 +3,7 @@ import React from "react";
 export const AboutSection = () => {
   return (
     <section className="flex w-full flex-col gap-y-4 py-20">
-      <h2 className="text-xl font-medium text-slate-500 md:text-2xl">
+      <h2 id="about" className="text-xl font-medium text-slate-500 md:text-2xl">
         / About Me
       </h2>
       <div className="h-[1px] w-full bg-slate-500"></div>

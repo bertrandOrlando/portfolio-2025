@@ -26,7 +26,9 @@ const workHistory = [
 export const WorkSection = () => {
   return (
     <section className="container flex w-full flex-col gap-y-8 px-20 py-20">
-      <h2 className="text-2xl font-medium text-slate-500">/ Work History</h2>
+      <h2 id="work" className="text-2xl font-medium text-slate-500">
+        / Work History
+      </h2>
       <div className="h-[1px] w-full bg-slate-500"></div>
       <div className="grid grid-cols-3 gap-x-8">
         <div>
