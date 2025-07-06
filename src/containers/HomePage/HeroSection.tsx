@@ -11,20 +11,20 @@ export const HeroSection = () => {
   ];
 
   return (
-    <header className="container w-full px-20 pt-24 pb-20">
-      <div className="grid grid-cols-5 items-center justify-evenly gap-2">
-        <div className="col-span-4 text-9xl font-semibold">Bertrand</div>
+    <header className="pt-24 pb-20">
+      <div className="grid grid-cols-5 items-center justify-evenly gap-2 text-4xl font-semibold md:text-7xl lg:text-9xl">
+        <div className="col-span-4">Bertrand</div>
         <Image
           src="/assets/pasfoto.jpg"
-          alt=""
+          alt="Profile picture of Bertrand Orlando"
           width={160}
           height={160}
-          className="aspect-square rounded-full"
+          className="invisible row-span-2 aspect-square rounded-full md:visible"
         />
-        <div className="col-span-4 text-9xl font-semibold">Orlando</div>
+        <div className="col-span-4">Orlando</div>
       </div>
       <Typewriter
-        className="text-3xl font-medium"
+        className="text-2xl font-medium lg:text-3xl"
         lines={descriptions}
         typingSpeed={100}
         deletingSpeed={50}

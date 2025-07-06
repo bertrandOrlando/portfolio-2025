@@ -4,10 +4,10 @@ import Skills from "@/data/Skill.json";
 
 export const SkillSection = () => {
   return (
-    <section className="container flex w-full flex-col gap-y-8 px-20 py-20">
+    <section className="flex w-full flex-col gap-y-8 py-20">
       <h2 className="text-2xl font-medium text-slate-500">/ My Skills</h2>
       <div className="h-[1px] w-full bg-slate-500"></div>
-      <div className="grid grid-cols-7 items-center justify-center gap-8">
+      <div className="grid grid-cols-2 items-center justify-center gap-8 md:grid-cols-4 lg:grid-cols-7">
         {Skills.map((skill, index) => (
           <div
             key={`skills-${index}`}

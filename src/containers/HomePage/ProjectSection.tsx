@@ -44,7 +44,7 @@ export const ProjectSection = () => {
   ];
 
   return (
-    <section className="container flex w-full flex-col gap-y-8 px-20 py-20">
+    <section className="flex w-full flex-col gap-y-8 py-20">
       <h2 className="text-2xl font-medium text-slate-500">/ Projects</h2>
       <div className="h-[1px] w-full bg-slate-500"></div>
 
