@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { AboutSection } from "@/containers/HomePage/AboutSection";
 import { SkillSection } from "@/containers/HomePage/SkillSection";
 import { ProjectSection } from "@/containers/HomePage/ProjectSection";
+import { Contact } from "@/containers/HomePage/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <SkillSection />
       <ProjectSection />
+      <Contact/>
     </div>
   );
 }
