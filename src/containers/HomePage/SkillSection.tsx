@@ -21,7 +21,9 @@ export const SkillSection = () => {
               width={100}
               height={100}
             />
-            <p className="mt-2 text-center text-lg font-medium">{skill.name}</p>
+            <p className="mt-2 text-center font-medium md:text-lg">
+              {skill.name}
+            </p>
           </div>
         ))}
       </div>

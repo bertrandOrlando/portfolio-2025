@@ -31,7 +31,7 @@ export const ProjectSection = () => {
     },
     {
       title: "WombatFM - Live Setlist Archive Platform",
-      description: `WombatFM is a web-based platform inspired by setlist.fm</Link>)} that enables users to browse, search, and archive concert setlists from various artists. The application includes features such as artist profiles, concert and show listings, timeline views, setlist submissions, and  charts for review analytics.`,
+      description: `WombatFM is a web-based platform inspired by setlist.fm that enables users to browse, search, and archive concert setlists from various artists. The application includes features such as artist profiles, concert and show listings, timeline views, setlist submissions, and  charts for review analytics.`,
       images: ["/WombatFM/Home.png"],
       technologies: [
         "Next.js",

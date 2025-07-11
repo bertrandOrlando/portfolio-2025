@@ -8,14 +8,16 @@ import { Footer } from "@/containers/HomePage/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-slate-50 px-10 md:px-20">
+    <>
       <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <SkillSection />
-      <ProjectSection />
-      <Contact />
+      <div className="bg-slate-50 px-10 py-12 md:px-20">
+        <HeroSection />
+        <AboutSection />
+        <SkillSection />
+        <ProjectSection />
+        <Contact />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }

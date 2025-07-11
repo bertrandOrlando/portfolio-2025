@@ -20,8 +20,10 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between py-6">
-      <h2 className="text-3xl font-semibold text-violet-700">BO</h2>
+    <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-slate-300 bg-white px-20 py-6 shadow-md shadow-slate-200">
+      <h2 className="text-3xl font-semibold text-violet-700">
+        <Link href={`#`}>BO</Link>
+      </h2>
       <ul className="hidden items-center gap-4 lg:flex">
         {NavItems.map((item) => (
           <motion.li
@@ -72,7 +74,7 @@ export const Navbar = () => {
               </motion.div>
             </Link>
           </motion.li>
-          <li className="rounded-3xl border border-violet-700 px-4 py-1 text-base font-medium text-black transition-colors duration-300 hover:bg-violet-600 hover:text-white md:text-lg">
+          <li className="hidden rounded-3xl border border-violet-700 px-4 py-1 text-base font-medium text-black transition-colors duration-300 hover:bg-violet-600 hover:text-white sm:block md:text-lg">
             <Link href="mailto:bertrandorlando@gmail.com">Get in Touch</Link>
           </li>
         </ul>
@@ -97,11 +99,10 @@ export const Navbar = () => {
           ></div>
         </button>
       </div>
-
       <motion.ul
         initial={{ opacity: 0 }}
         animate={{ opacity: isOpen ? 1 : 0 }}
-        className="absolute top-16 right-0 z-10 flex w-full flex-col items-center gap-4 bg-white p-6 shadow-lg lg:hidden"
+        className="absolute top-16 right-0 z-10 flex w-full flex-col items-center gap-4 bg-white p-6 shadow-lg"
       >
         {NavItems.map((item) => (
           <motion.li
