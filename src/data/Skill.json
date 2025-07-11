@@ -107,5 +107,29 @@
   {
     "name": "Sql Server",
     "icon": "/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+  },
+  {
+    "name": "Prisma",
+    "icon": "/icons/prisma/prisma-original.svg"
+  },
+  {
+    "name": "Pandas",
+    "icon": "/icons/pandas/pandas-original.svg"
+  },
+  {
+    "name": "Numpy",
+    "icon": "/icons/numpy/numpy-original.svg"
+  },
+  {
+    "name": "Matplotlib",
+    "icon": "/icons/matplotlib/matplotlib-original-wordmark.svg"
+  },
+  {
+    "name": "Scikit-learn",
+    "icon": "/icons/scikitlearn/scikitlearn-original.svg"
+  },
+  {
+    "name": "Power BI",
+    "icon": "/icons/powerbi/powerbi-original.svg"
   }
 ]
