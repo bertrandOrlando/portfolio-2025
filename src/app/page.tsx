@@ -4,6 +4,7 @@ import { AboutSection } from "@/containers/HomePage/AboutSection";
 import { SkillSection } from "@/containers/HomePage/SkillSection";
 import { ProjectSection } from "@/containers/HomePage/ProjectSection";
 import { Contact } from "@/containers/HomePage/Contact";
+import { Footer } from "@/containers/HomePage/Footer";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <AboutSection />
       <SkillSection />
       <ProjectSection />
-      <Contact/>
+      <Contact />
+      <Footer />
     </div>
   );
 }
